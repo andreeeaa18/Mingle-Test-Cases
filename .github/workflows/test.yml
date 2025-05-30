@@ -1,4 +1,4 @@
-name: Run Tests
+name: Playwright Tests
 
 on:
   push:
@@ -22,5 +22,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Playwright tests
         run: npm test
