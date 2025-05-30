@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import { login } from "/Users/andreevandreea/Desktop/QA/ScenariiMingle/utils.js";
+import { login } from "../utils";
 test("Log out", async ({ page }) => {
   await page.goto("https://frontend-mingle.vercel.app");
   await login(page);
