@@ -12,6 +12,7 @@ const { defineConfig, devices } = require('@playwright/test');
  */
 module.exports = defineConfig({
   testDir: './tests',
+  testIgnore: ['**/mingle-e2e/**'], // run via playwright.mingle.config.js (needs the app on localhost:3000)
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
