@@ -78,6 +78,15 @@ npm install
 npx playwright install
 ```
 
+Create a `.env` file (see `.env.example`) with the account used by TC1, TC2 and the `login` helper:
+
+```
+TEST_EMAIL=your-test-account@example.com
+TEST_PASSWORD=your-test-password
+```
+
+In GitHub Actions, add the same two values as repository secrets (`TEST_EMAIL`, `TEST_PASSWORD`). Never commit `.env`.
+
 **TC1-TC3 and API tests** run against the deployed app:
 
 ```bash
