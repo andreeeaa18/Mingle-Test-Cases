@@ -11,11 +11,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.51.1",
-    "@types/node": "^22.14.1",
     "@percy/cli": "^1.30.7",
     "@percy/playwright": "^1.0.7",
     "@percy/sdk-utils": "^1.30.8",
-    "dotenv": "^16.4.5"
+    "@playwright/test": "^1.51.1",
+    "@types/node": "^22.14.1",
+    "dotenv": "^16.4.5",
+    "jsqr": "^1.4.0"
   }
 }
